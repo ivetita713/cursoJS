@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h3> TRIVIA DE PELICULAS</h3> <!-- titulo -->
+  <div class="container">
+  <form>
+    <label>1. ¿Quién es el actor de la saga "Misión imposible"?</label>
+    <ul>
+    <li><p id="q1p1" onclick="answer1('q1a1');"><input id="q1a1" type="radio" value="Tom Cruise"/> Tom Cruise</p></li> <!-- definiendo la respuesta -->
+    <li><p id="q1p2" onclick="answer1('q1a2');"><input id="q1a2" type="radio" value="Brad Pitt"/> Brad Pitt</p></li>
+    <li><p id="q1p3" onclick="answer1('q1a3');"><input id="q1a3" type="radio" value="Zac Efron"/> Zac Efron</p></li>
+    </ul>
+    <!-- Se usa onclick para poder habilitar la función de selección. 
+    Cada variable está definida en relación a la pregunta y al número de respuesta -->
+    <label>2. Actriz famosa por ser Hermione en Harry Potter</label> <!-- pregunta 2 y sus respuestas -->
+    <ul>
+    <li><p id="q2p1" onclick="answer2('q2a1');"><input id="q2a1" type="radio" value="Tom Cruise"/> Tom Cruise</p></li>
+    <li><p id="q2p2" onclick="answer2('q2a2');"><input id="q2a2" type="radio" value="Julia Roberts"/> Julia Roberts</p></li>
+    <li><p id="q2p3" onclick="answer2('q2a3');"><input id="q2a3" type="radio" name="actor3"/> Selena Gómez</p></li>
+    </ul>
+  </form>
+  <button onclick='validate()'>Validar respuestas</button>
+  <script src="script.js"></script>
+</body>
+
+  <script src="script.js"></script>
+
+</html>
